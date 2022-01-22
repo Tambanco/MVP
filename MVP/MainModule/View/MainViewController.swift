@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    // MARK: - @IBAction
     @IBAction func didTapButtonAction(_ sender: Any) {
         self.presenter.showGreeting()
     }

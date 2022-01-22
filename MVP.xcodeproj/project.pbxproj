@@ -18,6 +18,8 @@
 		496CCB0E279C3A68009F897A /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */; };
 		496CCB1B279C3B9E009F897A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1A279C3B9E009F897A /* Person.swift */; };
 		496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1C279C3BD2009F897A /* MainPresenter.swift */; };
+		496CCB23279C4134009F897A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496CCB22279C4134009F897A /* MainViewController.xib */; };
+		496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB24279C41F6009F897A /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		496CCB1A279C3B9E009F897A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		496CCB1C279C3BD2009F897A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		496CCB22279C4134009F897A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		496CCB24279C41F6009F897A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				496CCAEA279C3A67009F897A /* AppDelegate.swift */,
 				496CCAEC279C3A67009F897A /* SceneDelegate.swift */,
+				496CCB24279C41F6009F897A /* ModuleBuilder.swift */,
 				496CCB1E279C40AE009F897A /* MainModule */,
 				496CCAF0279C3A67009F897A /* Main.storyboard */,
 				496CCAF3279C3A68009F897A /* Assets.xcassets */,
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				496CCAEE279C3A67009F897A /* MainViewController.swift */,
+				496CCB22279C4134009F897A /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 				496CCAF7279C3A68009F897A /* LaunchScreen.storyboard in Resources */,
 				496CCAF4279C3A68009F897A /* Assets.xcassets in Resources */,
 				496CCAF2279C3A67009F897A /* Main.storyboard in Resources */,
+				496CCB23279C4134009F897A /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +308,7 @@
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
 				496CCB1B279C3B9E009F897A /* Person.swift in Sources */,
 				496CCAED279C3A67009F897A /* SceneDelegate.swift in Sources */,
+				496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
