@@ -105,9 +105,7 @@
 			children = (
 				496CCAEA279C3A67009F897A /* AppDelegate.swift */,
 				496CCAEC279C3A67009F897A /* SceneDelegate.swift */,
-				496CCAEE279C3A67009F897A /* MainViewController.swift */,
-				496CCB1A279C3B9E009F897A /* Person.swift */,
-				496CCB1C279C3BD2009F897A /* MainPresenter.swift */,
+				496CCB1E279C40AE009F897A /* MainModule */,
 				496CCAF0279C3A67009F897A /* Main.storyboard */,
 				496CCAF3279C3A68009F897A /* Assets.xcassets */,
 				496CCAF5279C3A68009F897A /* LaunchScreen.storyboard */,
@@ -131,6 +129,40 @@
 				496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		496CCB1E279C40AE009F897A /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				496CCB1F279C40BE009F897A /* View */,
+				496CCB20279C40C4009F897A /* Model */,
+				496CCB21279C40CB009F897A /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		496CCB1F279C40BE009F897A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				496CCAEE279C3A67009F897A /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		496CCB20279C40C4009F897A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				496CCB1A279C3B9E009F897A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		496CCB21279C40CB009F897A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				496CCB1C279C3BD2009F897A /* MainPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
