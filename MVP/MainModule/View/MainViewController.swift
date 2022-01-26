@@ -21,6 +21,8 @@ class MainViewController: UITableViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = 100
+        
     }
 }
 
@@ -33,6 +35,7 @@ extension MainViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseId, for: indexPath) as? MainTableViewCell else { return UITableViewCell()}
         cell.titleLabel.text = "More"
+        cell.backgroundColor = .brown
         return cell
     }
 }

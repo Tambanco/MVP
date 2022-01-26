@@ -16,9 +16,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="592" height="239"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mg-Nh-NH3">
-                        <rect key="frame" x="196" y="100" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mg-Nh-NH3">
+                        <rect key="frame" x="29" y="18" width="284" height="55"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
             <connections>
                 <outlet property="titleLabel" destination="3Mg-Nh-NH3" id="JOA-te-y2p"/>
             </connections>
-            <point key="canvasLocation" x="19" y="69"/>
+            <point key="canvasLocation" x="18.840579710144929" y="68.638392857142847"/>
         </tableViewCell>
     </objects>
 </document>
