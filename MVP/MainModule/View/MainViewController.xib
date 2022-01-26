@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MVP" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="kuw-nO-lFr" id="ul4-qs-H2v"/>
+                <outlet property="tableView" destination="gJh-Zw-FiD" id="LaL-Zp-QWU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="tH6-iK-I4R"/>
             </connections>
         </placeholder>
@@ -19,31 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-tI-ucS">
-                    <rect key="frame" x="174" y="433" width="67" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                    <connections>
-                        <action selector="didTapButtonAction:" destination="-1" eventType="touchUpInside" id="u2b-Zs-ikN"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuw-nO-lFr">
-                    <rect key="frame" x="20" y="362" width="374" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-Zw-FiD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="Yw5-tI-ucS" firstAttribute="top" secondItem="kuw-nO-lFr" secondAttribute="bottom" constant="50" id="5L9-1o-yCJ"/>
-                <constraint firstItem="Yw5-tI-ucS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Gh-DK-8Mw"/>
-                <constraint firstItem="Yw5-tI-ucS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6K1-93-mNC"/>
-                <constraint firstItem="kuw-nO-lFr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9ZP-49-lUI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kuw-nO-lFr" secondAttribute="trailing" constant="20" id="mHh-Z3-gj8"/>
-            </constraints>
-            <point key="canvasLocation" x="139" y="144"/>
+            <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>
         </view>
     </objects>
     <resources>
