@@ -7,32 +7,32 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITableViewController {
     
     // MARK: - IBOutlet
-    @IBOutlet weak var tableView: UITableView!
     
     var presenter: MainViewPresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        let nib = UINib(nibName: "MainTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: MainTableViewCell.reuseId)
+        
         tableView.dataSource = self
         tableView.delegate = self
     }
 }
 
-extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+extension MainViewController {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = "Gafs"
-        cell.contentConfiguration = content
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseId, for: indexPath) as? MainTableViewCell else { return UITableViewCell()}
+        cell.titleLabel.text = "More"
         return cell
     }
 }

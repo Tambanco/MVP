@@ -18,9 +18,10 @@
 		496CCB0E279C3A68009F897A /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */; };
 		496CCB1B279C3B9E009F897A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1A279C3B9E009F897A /* Person.swift */; };
 		496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1C279C3BD2009F897A /* MainPresenter.swift */; };
-		496CCB23279C4134009F897A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496CCB22279C4134009F897A /* MainViewController.xib */; };
 		496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB24279C41F6009F897A /* ModuleBuilder.swift */; };
 		49A27380279C5D61001259CE /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2737F279C5D61001259CE /* MainPresenterTest.swift */; };
+		49A2738827A19347001259CE /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2738627A19347001259CE /* MainTableViewCell.swift */; };
+		49A2738927A19347001259CE /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2738727A19347001259CE /* MainTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +57,10 @@
 		496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		496CCB1A279C3B9E009F897A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		496CCB1C279C3BD2009F897A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		496CCB22279C4134009F897A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		496CCB24279C41F6009F897A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		49A2737F279C5D61001259CE /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		49A2738627A19347001259CE /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		49A2738727A19347001259CE /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				496CCAEE279C3A67009F897A /* MainViewController.swift */,
-				496CCB22279C4134009F897A /* MainViewController.xib */,
+				49A2738627A19347001259CE /* MainTableViewCell.swift */,
+				49A2738727A19347001259CE /* MainTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,8 +291,8 @@
 			files = (
 				496CCAF7279C3A68009F897A /* LaunchScreen.storyboard in Resources */,
 				496CCAF4279C3A68009F897A /* Assets.xcassets in Resources */,
+				49A2738927A19347001259CE /* MainTableViewCell.xib in Resources */,
 				496CCAF2279C3A67009F897A /* Main.storyboard in Resources */,
-				496CCB23279C4134009F897A /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +320,7 @@
 				496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */,
 				496CCAEF279C3A67009F897A /* MainViewController.swift in Sources */,
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
+				49A2738827A19347001259CE /* MainTableViewCell.swift in Sources */,
 				496CCB1B279C3B9E009F897A /* Person.swift in Sources */,
 				496CCAED279C3A67009F897A /* SceneDelegate.swift in Sources */,
 				496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */,
