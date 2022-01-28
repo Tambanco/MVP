@@ -22,6 +22,7 @@
 		49A2739627A1A106001259CE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2739427A1A106001259CE /* CollectionViewCell.swift */; };
 		49A2739727A1A106001259CE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2739527A1A106001259CE /* CollectionViewCell.xib */; };
 		49C976E927A43D430011667E /* PastaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C976E827A43D430011667E /* PastaInfo.swift */; };
+		49C976EB27A43DF60011667E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C976EA27A43DF60011667E /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		49A2739427A1A106001259CE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		49A2739527A1A106001259CE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		49C976E827A43D430011667E /* PastaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaInfo.swift; sourceTree = "<group>"; };
+		49C976EA27A43DF60011667E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				496CCAEA279C3A67009F897A /* AppDelegate.swift */,
 				496CCAEC279C3A67009F897A /* SceneDelegate.swift */,
 				496CCB24279C41F6009F897A /* ModuleBuilder.swift */,
+				49C976EC27A43E0F0011667E /* ServiceLayer */,
 				496CCB1E279C40AE009F897A /* MainModule */,
 				496CCAF0279C3A67009F897A /* Main.storyboard */,
 				496CCAF3279C3A68009F897A /* Assets.xcassets */,
@@ -183,6 +186,14 @@
 				49A2737F279C5D61001259CE /* MainPresenterTest.swift */,
 			);
 			path = TestMainModule;
+			sourceTree = "<group>";
+		};
+		49C976EC27A43E0F0011667E /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				49C976EA27A43DF60011667E /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 			files = (
 				496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */,
 				496CCAEF279C3A67009F897A /* MainViewController.swift in Sources */,
+				49C976EB27A43DF60011667E /* NetworkService.swift in Sources */,
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
 				49A2739627A1A106001259CE /* CollectionViewCell.swift in Sources */,
 				496CCAED279C3A67009F897A /* SceneDelegate.swift in Sources */,

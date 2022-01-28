@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct PastaInfo: Decodable {
+    let id: Int
+    let name: String
+    let url: String
+    let text: String
+}
