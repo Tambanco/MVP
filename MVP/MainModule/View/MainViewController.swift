@@ -30,20 +30,26 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return presenter.pastaInfo?.count ?? 0
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseId, for: indexPath) as! CollectionViewCell
-        cell.titleLabel.text = "Капеллини"
-        cell.descriptionLabel.text = "Так называют самую тонкую пасту, придуманную в центре Северной Италии. Она же — капеллини (capellini). Варить ее нужно буквально 3–4 минуты — сильно меньше, чем обычные спагетти. Лучше всего паста сочетается с очень легкими соусами и морепродуктами."
-        cell.imgView.image = UIImage(named: "campanelle.jpg")
+        let pastaInfo = presenter.pastaInfo?[indexPath.row]
+         cell.titleLabel.text = pastaInfo?.name
+         cell.descriptionLabel.text = pastaInfo?.text
         return cell
     }
 }
 
 extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
-        
+    func success() {
+        mainCollectionView.reloadData()
     }
+    
+    func failure(error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    
 }
