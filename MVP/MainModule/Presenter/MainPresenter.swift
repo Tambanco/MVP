@@ -9,26 +9,40 @@ import Foundation
 
 // MARK: - Output protocol
 protocol MainViewProtocol: AnyObject {
-    func setGreeting(greeting: String) // метод отправляет сообщения View
+    func success()
+    func failure(error: Error)
 }
 
 // MARK: - Input protocol
 protocol MainViewPresenterProtocol: AnyObject {
-    init(view: MainViewProtocol, person: Person)
-    func showGreeting()
+    init(view: MainViewProtocol, networkService: NetworkServiceProtocol)
+    func getPastaInfo()
+    var pastaInfo: [PastaInfo]? { get set }
 }
 
 class MainPresenter: MainViewPresenterProtocol {
-    let view: MainViewProtocol
-    let person: Person
     
-    func showGreeting() {
-        let greeting = self.person.firstName + " " + self.person.lastName
-        self.view.setGreeting(greeting: greeting)
+    weak var view: MainViewProtocol?
+    let networkService: NetworkServiceProtocol!
+    var pastaInfo: [PastaInfo]?
+
+    required init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
+        self.view = view
+        self.networkService = networkService
+        getPastaInfo()
     }
     
-    required init(view: MainViewProtocol, person: Person) {
-        self.view = view
-        self.person = person
+    func getPastaInfo() {
+        networkService.getPastaInfo { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let pastaInfo):
+                self.pastaInfo = pastaInfo
+                self.view?.success()
+                
+            case .failure(let error):
+                self.view?.failure(error: error)
+            }
+        }
     }
 }
