@@ -16,12 +16,12 @@
 		496CCB02279C3A68009F897A /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB01279C3A68009F897A /* MVPTests.swift */; };
 		496CCB0C279C3A68009F897A /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0B279C3A68009F897A /* MVPUITests.swift */; };
 		496CCB0E279C3A68009F897A /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */; };
-		496CCB1B279C3B9E009F897A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1A279C3B9E009F897A /* Person.swift */; };
 		496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1C279C3BD2009F897A /* MainPresenter.swift */; };
 		496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB24279C41F6009F897A /* ModuleBuilder.swift */; };
 		49A27380279C5D61001259CE /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2737F279C5D61001259CE /* MainPresenterTest.swift */; };
 		49A2739627A1A106001259CE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2739427A1A106001259CE /* CollectionViewCell.swift */; };
 		49A2739727A1A106001259CE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2739527A1A106001259CE /* CollectionViewCell.xib */; };
+		49C976E927A43D430011667E /* PastaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C976E827A43D430011667E /* PastaInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		496CCB07279C3A68009F897A /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496CCB0B279C3A68009F897A /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		496CCB1A279C3B9E009F897A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		496CCB1C279C3BD2009F897A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		496CCB24279C41F6009F897A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		49A2737F279C5D61001259CE /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		49A2739427A1A106001259CE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		49A2739527A1A106001259CE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		49C976E827A43D430011667E /* PastaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 		496CCB20279C40C4009F897A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				496CCB1A279C3B9E009F897A /* Person.swift */,
+				49C976E827A43D430011667E /* PastaInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,8 +321,8 @@
 				496CCAEF279C3A67009F897A /* MainViewController.swift in Sources */,
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
 				49A2739627A1A106001259CE /* CollectionViewCell.swift in Sources */,
-				496CCB1B279C3B9E009F897A /* Person.swift in Sources */,
 				496CCAED279C3A67009F897A /* SceneDelegate.swift in Sources */,
+				49C976E927A43D430011667E /* PastaInfo.swift in Sources */,
 				496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
