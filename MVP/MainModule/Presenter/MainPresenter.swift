@@ -35,13 +35,15 @@ class MainPresenter: MainViewPresenterProtocol {
     func getPastaInfo() {
         networkService.getPastaInfo { [weak self] result in
             guard let self = self else { return }
-            switch result {
-            case .success(let pastaInfo):
-                self.pastaInfo = pastaInfo
-                self.view?.success()
-                
-            case .failure(let error):
-                self.view?.failure(error: error)
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let pastaInfo):
+                    self.pastaInfo = pastaInfo
+                    self.view?.success()
+                    
+                case .failure(let error):
+                    self.view?.failure(error: error)
+                }
             }
         }
     }
