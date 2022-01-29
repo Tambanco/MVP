@@ -25,14 +25,16 @@ class MainViewController: UIViewController {
                                                             height: self.view.frame.height), collectionViewLayout: layout)
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 100, height: 100)
+        layout.itemSize = CGSize(width: self.view.frame.width - 40,
+                                 height: 300)
         
         mainCollectionView.dataSource = self
         mainCollectionView.delegate = self
         
         view.addSubview(mainCollectionView)
         
-        mainCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        let nib = UINib(nibName: CollectionViewCell.reuseId, bundle: nil)
+        mainCollectionView.register(nib, forCellWithReuseIdentifier: CollectionViewCell.reuseId)
     }
 }
 
@@ -42,7 +44,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseId, for: indexPath)
         cell.backgroundColor = .yellow
         return cell 
     }
