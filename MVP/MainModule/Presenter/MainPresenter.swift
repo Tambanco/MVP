@@ -9,26 +9,22 @@ import Foundation
 
 // MARK: - Output protocol
 protocol MainViewProtocol: AnyObject {
-    func setGreeting(greeting: String) // метод отправляет сообщения View
+    func success()
+    func failure()
 }
 
 // MARK: - Input protocol
 protocol MainViewPresenterProtocol: AnyObject {
-    init(view: MainViewProtocol, person: Person)
-    func showGreeting()
+    init(view: MainViewProtocol, networkService: NetworkServiceProtocol)
 }
 
 class MainPresenter: MainViewPresenterProtocol {
+    
     let view: MainViewProtocol
-    let person: Person
+    let networkService: NetworkServiceProtocol
     
-    func showGreeting() {
-        let greeting = self.person.firstName + " " + self.person.lastName
-        self.view.setGreeting(greeting: greeting)
-    }
-    
-    required init(view: MainViewProtocol, person: Person) {
+    required init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
-        self.person = person
+        self.networkService = networkService
     }
 }

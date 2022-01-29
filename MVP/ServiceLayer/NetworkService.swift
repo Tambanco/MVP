@@ -16,7 +16,7 @@ class NetworkService: NetworkServiceProtocol {
         let urlString = "https://raw.githubusercontent.com/Tambanco/PastaJSON/main/pasta.json"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {
                 completion(.failure(error))
                 return
