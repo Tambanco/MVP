@@ -16,9 +16,9 @@
 		496CCB02279C3A68009F897A /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB01279C3A68009F897A /* MVPTests.swift */; };
 		496CCB0C279C3A68009F897A /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0B279C3A68009F897A /* MVPUITests.swift */; };
 		496CCB0E279C3A68009F897A /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */; };
-		496CCB1B279C3B9E009F897A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1A279C3B9E009F897A /* Person.swift */; };
 		496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1C279C3BD2009F897A /* MainPresenter.swift */; };
 		496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB24279C41F6009F897A /* ModuleBuilder.swift */; };
+		498D08E027A53D5C00B8E83B /* Pasta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D08DF27A53D5C00B8E83B /* Pasta.swift */; };
 		49A27380279C5D61001259CE /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2737F279C5D61001259CE /* MainPresenterTest.swift */; };
 		49C976EF27A524BF0011667E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C976ED27A524BF0011667E /* CollectionViewCell.swift */; };
 		49C976F027A524BF0011667E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C976EE27A524BF0011667E /* CollectionViewCell.xib */; };
@@ -55,9 +55,9 @@
 		496CCB07279C3A68009F897A /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496CCB0B279C3A68009F897A /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		496CCB0D279C3A68009F897A /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		496CCB1A279C3B9E009F897A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		496CCB1C279C3BD2009F897A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		496CCB24279C41F6009F897A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		498D08DF27A53D5C00B8E83B /* Pasta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasta.swift; sourceTree = "<group>"; };
 		49A2737F279C5D61001259CE /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		49C976ED27A524BF0011667E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		49C976EE27A524BF0011667E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		496CCB20279C40C4009F897A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				496CCB1A279C3B9E009F897A /* Person.swift */,
+				498D08DF27A53D5C00B8E83B /* Pasta.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,9 +319,9 @@
 			files = (
 				496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */,
 				496CCAEF279C3A67009F897A /* MainViewController.swift in Sources */,
+				498D08E027A53D5C00B8E83B /* Pasta.swift in Sources */,
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
 				49C976EF27A524BF0011667E /* CollectionViewCell.swift in Sources */,
-				496CCB1B279C3B9E009F897A /* Person.swift in Sources */,
 				496CCAED279C3A67009F897A /* SceneDelegate.swift in Sources */,
 				496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */,
 			);
