@@ -14,9 +14,11 @@ protocol Builder {
 
 class ModuleBuilder: Builder {
     static func createMainModule() -> UIViewController {
-        let model = Person(firstName: "dfd", lastName: "dgfhgjh")
+        
+        // Инъекция из вне, чтобы замокать
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, person: model)
+        let networkService = NetworkService()
+        let presenter = MainPresenter(view: view, networkService: networkService)
         view.presenter = presenter
         return view
     }

@@ -40,22 +40,27 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return presenter.pasta?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseId, for: indexPath)
+        let cell = mainCollectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseId, for: indexPath) as! CollectionViewCell
+        let pasta = presenter.pasta?[indexPath.row]
+        cell.titleLabel?.text = pasta?.name
+        cell.descriptionLabel.text = pasta?.text
         cell.backgroundColor = .yellow
         return cell 
     }
-    
-    
 }
 
 
 
 extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
-        
+    func success() {
+        mainCollectionView.reloadData()
+    }
+    
+    func failure(error: Error) {
+        print(error.localizedDescription)
     }
 }
