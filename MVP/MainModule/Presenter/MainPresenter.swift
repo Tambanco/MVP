@@ -22,26 +22,28 @@ protocol MainViewPresenterProtocol: AnyObject {
 
 class MainPresenter: MainViewPresenterProtocol {
     
-    let view: MainViewProtocol?
+    weak var view: MainViewProtocol?
     let networkService: NetworkServiceProtocol!
     var pasta: [Pasta]?
     
-    func getPasta() {
-        networkService.getPasta { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case .success(let pasta):
-                self.pasta = pasta
-                self.view?.success()
-            case .failure(let error):
-                self.view?.failure(error: error)
-            }
-        }
-    }
     
     required init(view: MainViewProtocol, networkService: NetworkServiceProtocol) {
         self.view = view
         self.networkService = networkService
         getPasta()
+    }
+    func getPasta() {
+        networkService.getPasta { [weak self] result in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let pasta):
+                    self.pasta = pasta
+                    self.view?.success()
+                case .failure(let error):
+                    self.view?.failure(error: error)
+                }
+            }
+        }
     }
 }
