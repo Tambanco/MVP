@@ -19,6 +19,7 @@
 		496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB1C279C3BD2009F897A /* MainPresenter.swift */; };
 		496CCB25279C41F6009F897A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CCB24279C41F6009F897A /* ModuleBuilder.swift */; };
 		498D08E027A53D5C00B8E83B /* Pasta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D08DF27A53D5C00B8E83B /* Pasta.swift */; };
+		498D08E227A53DF500B8E83B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D08E127A53DF500B8E83B /* NetworkService.swift */; };
 		49A27380279C5D61001259CE /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2737F279C5D61001259CE /* MainPresenterTest.swift */; };
 		49C976EF27A524BF0011667E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C976ED27A524BF0011667E /* CollectionViewCell.swift */; };
 		49C976F027A524BF0011667E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C976EE27A524BF0011667E /* CollectionViewCell.xib */; };
@@ -58,6 +59,7 @@
 		496CCB1C279C3BD2009F897A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		496CCB24279C41F6009F897A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		498D08DF27A53D5C00B8E83B /* Pasta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasta.swift; sourceTree = "<group>"; };
+		498D08E127A53DF500B8E83B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		49A2737F279C5D61001259CE /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		49C976ED27A524BF0011667E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		49C976EE27A524BF0011667E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				496CCAEA279C3A67009F897A /* AppDelegate.swift */,
 				496CCAEC279C3A67009F897A /* SceneDelegate.swift */,
 				496CCB24279C41F6009F897A /* ModuleBuilder.swift */,
+				498D08E327A53E1100B8E83B /* ServiceLayer */,
 				496CCB1E279C40AE009F897A /* MainModule */,
 				496CCAF0279C3A67009F897A /* Main.storyboard */,
 				496CCAF3279C3A68009F897A /* Assets.xcassets */,
@@ -175,6 +178,14 @@
 				496CCB1C279C3BD2009F897A /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		498D08E327A53E1100B8E83B /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				498D08E127A53DF500B8E83B /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 		49A27381279C5D96001259CE /* TestMainModule */ = {
@@ -319,6 +330,7 @@
 			files = (
 				496CCB1D279C3BD2009F897A /* MainPresenter.swift in Sources */,
 				496CCAEF279C3A67009F897A /* MainViewController.swift in Sources */,
+				498D08E227A53DF500B8E83B /* NetworkService.swift in Sources */,
 				498D08E027A53D5C00B8E83B /* Pasta.swift in Sources */,
 				496CCAEB279C3A67009F897A /* AppDelegate.swift in Sources */,
 				49C976EF27A524BF0011667E /* CollectionViewCell.swift in Sources */,
